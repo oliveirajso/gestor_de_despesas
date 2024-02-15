@@ -35,6 +35,7 @@
     "localApp": "Desbloquear com impressão digital",
     "expense": "Gasto",
     "transfer": "Transferência",
+    "transferException": "Precisa de duas ou mais contas",
     "daily": "Diariamente",
     "weekly": "Semanalmente",
     "monthly": "Mensalmente",
