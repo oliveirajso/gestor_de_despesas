@@ -1,8 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hive_flutter/adapters.dart';
 
-part 'debit_transactions_model.g.dart';
 part 'debit_transactions_model.freezed.dart';
+part 'debit_transactions_model.g.dart';
 
 @unfreezed
 class DebitTransactionsModel extends HiveObject with _$DebitTransactionsModel {

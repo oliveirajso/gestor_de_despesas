@@ -8,8 +8,8 @@ import 'package:paisa/features/intro/presentation/cubit/country_picker_cubit.dar
 import 'package:paisa/features/intro/presentation/widgets/intro_account_add_widget.dart';
 import 'package:paisa/features/intro/presentation/widgets/intro_category_add_widget.dart';
 import 'package:paisa/features/intro/presentation/widgets/intro_country_picker_widget.dart';
-import 'package:paisa/features/intro/presentation/widgets/intro_set_name_widget.dart';
 import 'package:paisa/features/intro/presentation/widgets/intro_image_picker_widget.dart';
+import 'package:paisa/features/intro/presentation/widgets/intro_set_name_widget.dart';
 import 'package:paisa/main.dart';
 import 'package:provider/provider.dart';
 

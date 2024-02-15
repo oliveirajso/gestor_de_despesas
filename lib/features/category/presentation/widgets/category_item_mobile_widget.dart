@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 
 class CategoryItemMobileWidget extends StatelessWidget {
@@ -25,11 +26,7 @@ class CategoryItemMobileWidget extends StatelessWidget {
           backgroundColor: Color(category.color ?? Colors.amber.shade100.value)
               .withOpacity(0.3),
           child: Icon(
-            IconData(
-              category.icon ?? 0,
-              fontFamily: fontFamilyName,
-              fontPackage: fontFamilyPackageName,
-            ),
+            IconDataCustom().getAccountIconData(category.icon ?? 0),
             color: Color(category.color ?? Colors.amber.shade100.value),
           ),
         ),

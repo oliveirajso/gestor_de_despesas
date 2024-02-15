@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:hive_flutter/adapters.dart';
+import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
 import 'package:paisa/main.dart';
-
-import 'package:paisa/core/common.dart';
 
 class WelcomeNameWidget extends StatelessWidget {
   const WelcomeNameWidget({Key? key}) : super(key: key);

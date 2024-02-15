@@ -9,9 +9,12 @@ import 'package:paisa/features/category/presentation/pages/add/add_category_page
 import 'package:paisa/features/category/presentation/pages/category_icon_picker_page.dart';
 import 'package:paisa/features/category/presentation/pages/category_list_page.dart';
 import 'package:paisa/features/debit/presentation/pages/add/add_debit_page.dart';
+import 'package:paisa/features/home/presentation/controller/summary_controller.dart';
 import 'package:paisa/features/home/presentation/pages/home/home_page.dart';
 import 'package:paisa/features/home/presentation/pages/overview/transactions_by_category_list_page.dart';
+import 'package:paisa/features/intro/intro_page.dart';
 import 'package:paisa/features/intro/presentation/pages/biometric_page.dart';
+import 'package:paisa/features/intro/user_onboarding_page.dart';
 import 'package:paisa/features/recurring/presentation/page/add_recurring_page.dart';
 import 'package:paisa/features/recurring/presentation/page/recurring_page.dart';
 import 'package:paisa/features/search/presentation/pages/search_page.dart';
@@ -20,9 +23,6 @@ import 'package:paisa/features/settings/presentation/pages/export_and_import_pag
 import 'package:paisa/features/settings/presentation/pages/font_picker_page.dart';
 import 'package:paisa/features/settings/presentation/pages/setting_page.dart';
 import 'package:paisa/features/transaction/presentation/pages/transaction_page.dart';
-import 'package:paisa/features/intro/intro_page.dart';
-import 'package:paisa/features/intro/user_onboarding_page.dart';
-import 'package:paisa/features/home/presentation/controller/summary_controller.dart';
 import 'package:provider/provider.dart';
 
 final Box<dynamic> settings = Hive.box(BoxType.settings.name);

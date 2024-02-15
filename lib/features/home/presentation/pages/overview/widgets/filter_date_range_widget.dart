@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:paisa/core/common.dart';
 import 'package:paisa/features/transaction/domain/entities/transaction.dart';
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 
 class ItemWidget extends StatelessWidget {
   const ItemWidget({
@@ -50,11 +51,7 @@ class ItemWidget extends StatelessWidget {
                 child: CircleAvatar(
                   backgroundColor: color,
                   child: Icon(
-                    IconData(
-                      icon,
-                      fontFamily: fontFamilyName,
-                      fontPackage: fontFamilyPackageName,
-                    ),
+                    IconDataCustom().getAccountIconData(icon),
                     color: context.onPrimary,
                   ),
                 ),

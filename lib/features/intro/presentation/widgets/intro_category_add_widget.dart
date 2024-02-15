@@ -1,21 +1,21 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/constants/constants.dart';
 import 'package:paisa/core/enum/box_types.dart';
 import 'package:paisa/core/extensions/build_context_extension.dart';
 import 'package:paisa/core/extensions/category_extension.dart';
-import 'package:paisa/core/extensions/text_style_extension.dart';
 import 'package:paisa/core/extensions/color_extension.dart';
+import 'package:paisa/core/extensions/text_style_extension.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
+import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/category/data/data_sources/default_category.dart';
 import 'package:paisa/features/category/data/data_sources/local/category_data_source.dart';
 import 'package:paisa/features/category/data/model/category_model.dart';
 import 'package:paisa/features/intro/presentation/widgets/intro_image_picker_widget.dart';
 import 'package:paisa/main.dart';
-import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class IntroCategoryAddWidget extends StatefulWidget {
@@ -135,11 +135,8 @@ class _IntroCategoryAddWidgetState extends State<IntroCategoryAddWidget>
                             labelStyle: context.titleMedium,
                             padding: const EdgeInsets.all(12),
                             avatar: Icon(
-                              IconData(
-                                model.icon ?? 0,
-                                fontFamily: fontFamilyName,
-                                fontPackage: fontFamilyPackageName,
-                              ),
+                              IconDataCustom()
+                                  .getAccountIconData(model.icon ?? 0),
                               color: context.primary,
                             ),
                           ))
@@ -195,11 +192,7 @@ class CategoryItemWidget extends StatelessWidget {
       mobile: (p0) => ListTile(
         onTap: onPress,
         leading: Icon(
-          IconData(
-            model.icon ?? 0,
-            fontFamily: fontFamilyName,
-            fontPackage: fontFamilyPackageName,
-          ),
+          IconDataCustom().getAccountIconData(model.icon ?? 0),
           color: Color(model.color ?? Colors.brown.shade200.value),
         ),
         title: Text(model.name ?? ''),
@@ -215,11 +208,7 @@ class CategoryItemWidget extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 16.0),
                   child: Icon(
-                    IconData(
-                      model.icon ?? 0,
-                      fontFamily: fontFamilyName,
-                      fontPackage: fontFamilyPackageName,
-                    ),
+                    IconDataCustom().getAccountIconData(model.icon ?? 0),
                     color: Color(model.color ?? Colors.brown.shade200.value),
                   ),
                 ),

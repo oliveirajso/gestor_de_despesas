@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 
 import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
@@ -29,11 +30,7 @@ class CategoryItemTabletWidget extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Icon(
-                IconData(
-                  category.icon ?? 0,
-                  fontFamily: fontFamilyName,
-                  fontPackage: fontFamilyPackageName,
-                ),
+                IconDataCustom().getAccountIconData(category.icon ?? 0),
                 color: Color(category.color ?? context.primary.value),
               ),
             ),

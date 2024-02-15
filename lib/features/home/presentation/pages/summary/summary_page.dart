@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
-import 'package:provider/provider.dart';
-import 'package:responsive_builder/responsive_builder.dart';
-
 import 'package:paisa/features/home/presentation/cubit/summary/summary_cubit.dart';
 import 'package:paisa/features/home/presentation/pages/summary/widgets/summary_desktop_widget.dart';
 import 'package:paisa/features/home/presentation/pages/summary/widgets/summary_mobile_widget.dart';
 import 'package:paisa/features/home/presentation/pages/summary/widgets/summary_tablet_widget.dart';
+import 'package:provider/provider.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class SummaryPage extends StatelessWidget {
   const SummaryPage({

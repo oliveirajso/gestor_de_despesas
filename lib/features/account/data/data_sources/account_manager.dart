@@ -1,4 +1,5 @@
 import 'package:paisa/features/account/data/model/account_model.dart';
+
 export 'package:paisa/features/account/data/data_sources/local/local_account_manager_impl.dart';
 export 'package:paisa/features/account/data/data_sources/remote/remote_account_data_manager_impl.dart';
 

@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
+import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/category/data/model/category_model.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 import 'package:paisa/features/home/presentation/bloc/home/home_bloc.dart';
+import 'package:paisa/features/home/presentation/controller/summary_controller.dart';
 import 'package:paisa/features/transaction/domain/entities/transaction.dart';
 import 'package:paisa/main.dart';
-import 'package:paisa/features/home/presentation/controller/summary_controller.dart';
-import 'package:paisa/core/widgets/paisa_widget.dart';
 
 class BudgetPage extends StatelessWidget {
   const BudgetPage({
@@ -77,11 +77,7 @@ class BudgetItem extends StatelessWidget {
       leading: CircleAvatar(
         backgroundColor: category.backgroundColor,
         child: Icon(
-          IconData(
-            category.icon ?? 0,
-            fontFamily: fontFamilyName,
-            fontPackage: fontFamilyPackageName,
-          ),
+          IconDataCustom().getAccountIconData(category.icon ?? 0),
           color: category.foregroundColor,
         ),
       ),

@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 import 'package:paisa/features/transaction/domain/entities/transaction.dart';
@@ -57,11 +58,7 @@ class ExpenseItemWidget extends StatelessWidget {
           backgroundColor:
               Color(category.color ?? context.surface.value).withOpacity(0.2),
           child: Icon(
-            IconData(
-              category.icon ?? 0,
-              fontFamily: fontFamilyName,
-              fontPackage: fontFamilyPackageName,
-            ),
+            IconDataCustom().getAccountIconData(category.icon ?? 0),
             color: Color(category.color ?? context.surface.value),
           ),
         ),

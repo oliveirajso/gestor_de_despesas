@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
-import 'package:paisa/main.dart';
 import 'package:paisa/core/widgets/lava/lava_clock.dart';
 import 'package:paisa/core/widgets/paisa_widget.dart';
+import 'package:paisa/main.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import 'package:paisa/core/common.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});

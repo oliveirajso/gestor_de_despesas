@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 import 'package:paisa/features/transaction/domain/entities/transaction.dart';
 
@@ -41,13 +41,9 @@ class CategoryListWidget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Icon(
+                        IconDataCustom().getAccountIconData(map.key.icon ?? 0),
                         color:
                             Color(map.key.color ?? Colors.amber.shade100.value),
-                        IconData(
-                          map.key.icon ?? 0,
-                          fontFamily: fontFamilyName,
-                          fontPackage: fontFamilyPackageName,
-                        ),
                       ),
                     ),
                     Expanded(

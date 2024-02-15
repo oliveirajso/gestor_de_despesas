@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/theme/custom_color.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';

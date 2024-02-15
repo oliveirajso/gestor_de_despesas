@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
 import 'package:paisa/features/account/presentation/widgets/account_summary_widget.dart';
 import 'package:paisa/features/home/presentation/pages/summary/widgets/expense_total_for_month_widget.dart';
 import 'package:paisa/features/home/presentation/pages/summary/widgets/total_balance_widget.dart';
 import 'package:paisa/features/transaction/domain/entities/transaction.dart';
-import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:provider/provider.dart';
 
 class ExpenseTotalWidget extends StatelessWidget {

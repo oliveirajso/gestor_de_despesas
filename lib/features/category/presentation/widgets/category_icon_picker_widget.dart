@@ -5,6 +5,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:paisa/core/constants/constants.dart';
 import 'package:paisa/core/extensions/build_context_extension.dart';
 import 'package:paisa/core/extensions/color_extension.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/features/category/presentation/bloc/category_bloc.dart';
 
 class CategoryIconPickerWidget extends StatelessWidget {
@@ -30,11 +31,7 @@ class CategoryIconPickerWidget extends StatelessWidget {
           title: Text(context.loc.selectIconTitle),
           subtitle: Text(context.loc.selectIconSubTitle),
           leading: Icon(
-            IconData(
-              codePoint,
-              fontFamily: fontFamilyName,
-              fontPackage: fontFamilyPackageName,
-            ),
+            IconDataCustom().getAccountIconData(codePoint),
             color: context.primary,
           ),
           onTap: () async {

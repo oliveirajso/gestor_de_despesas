@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/common.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/features/category/data/model/category_model.dart';
 import 'package:paisa/features/category/domain/entities/category.dart';
 import 'package:paisa/features/transaction/presentation/bloc/transaction_bloc.dart';
@@ -160,12 +161,8 @@ class CategoryChip extends StatelessWidget {
       onSelected: onSelected,
       selectedColor: selected ? titleColor.withOpacity(0.2) : null,
       avatar: Icon(
+        IconDataCustom().getAccountIconData(icon),
         color: iconColor,
-        IconData(
-          icon,
-          fontFamily: fontFamilyName,
-          fontPackage: fontFamilyPackageName,
-        ),
       ),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(28),

@@ -57,6 +57,7 @@ class Languages {
     LanguageEntity(code: 'it', value: 'Italian'),
     LanguageEntity(code: 'kn', value: 'Kannada (IN)'),
     LanguageEntity(code: 'pt', value: 'Portuguese'),
+    LanguageEntity(code: 'pt_BR', value: 'Portugues Brasil'),
     LanguageEntity(code: 'ru', value: 'Russian'),
     LanguageEntity(code: 'ta', value: 'Tamil (IN)'),
     LanguageEntity(code: 'vi', value: 'Vietnamese'),

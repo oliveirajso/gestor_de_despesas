@@ -1,7 +1,8 @@
 import 'dart:async';
-import 'package:freezed_annotation/freezed_annotation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:injectable/injectable.dart';
 import 'package:paisa/core/common.dart';

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:paisa/core/common.dart';
 
 enum UserMenuPopup { debts, chooseTheme, settings, userDetails }

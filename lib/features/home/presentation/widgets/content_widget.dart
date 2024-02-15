@@ -1,8 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
-
 import 'package:paisa/features/account/presentation/pages/accounts_page.dart';
 import 'package:paisa/features/category/presentation/pages/category_list_page.dart';
 import 'package:paisa/features/debit/presentation/pages/debts_page.dart';
@@ -15,6 +13,7 @@ import 'package:paisa/features/home/presentation/pages/overview/overview_page.da
 import 'package:paisa/features/home/presentation/pages/summary/summary_page.dart';
 import 'package:paisa/features/recurring/presentation/page/recurring_page.dart';
 import 'package:paisa/main.dart';
+import 'package:provider/provider.dart';
 
 class ContentWidget extends StatelessWidget {
   const ContentWidget({

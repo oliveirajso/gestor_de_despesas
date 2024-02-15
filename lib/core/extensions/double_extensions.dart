@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:provider/provider.dart';
-
 import 'package:paisa/features/country_picker/domain/entities/country.dart';
+import 'package:provider/provider.dart';
 
 extension MappingOnDouble on double {
   String toFormateCurrency(BuildContext context, {Country? selectedCountry}) {

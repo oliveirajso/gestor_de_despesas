@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/common_enum.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:paisa/core/widgets/paisa_widget.dart';
 import 'package:paisa/features/account/data/model/account_model.dart';
 import 'package:paisa/features/account/domain/entities/account_entity.dart';
@@ -232,14 +233,11 @@ class _FilterWidgetState extends State<FilterWidget> {
                         });
                       },
                       avatar: Icon(
+                        IconDataCustom().getAccountIconData(
+                            account.cardType!.icon.codePoint),
                         color: isSelected
                             ? context.primary
                             : context.onSurfaceVariant,
-                        IconData(
-                          account.cardType!.icon.codePoint,
-                          fontFamily: fontFamilyName,
-                          fontPackage: fontFamilyPackageName,
-                        ),
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(28),
@@ -305,14 +303,11 @@ class _FilterWidgetState extends State<FilterWidget> {
                         });
                       },
                       avatar: Icon(
+                        IconDataCustom()
+                            .getAccountIconData(categoryEntity.icon ?? 0),
                         color: isSelected
                             ? context.primary
                             : context.onSurfaceVariant,
-                        IconData(
-                          categoryEntity.icon ?? 0,
-                          fontFamily: fontFamilyName,
-                          fontPackage: fontFamilyPackageName,
-                        ),
                       ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(28),

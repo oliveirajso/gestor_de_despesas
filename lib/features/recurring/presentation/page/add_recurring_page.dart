@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:paisa/core/uteis/icon_data.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'package:paisa/core/common.dart';
@@ -329,12 +330,9 @@ class _CategorySelectWidgetState extends State<CategorySelectWidget> {
                 child: FilterChip(
                   onSelected: (value) => context.pushNamed(addCategoryPath),
                   avatar: Icon(
+                    IconDataCustom()
+                        .getAccountIconData(MdiIcons.plus.codePoint),
                     color: context.primary,
-                    IconData(
-                      MdiIcons.plus.codePoint,
-                      fontFamily: fontFamilyName,
-                      fontPackage: fontFamilyPackageName,
-                    ),
                   ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(28),
@@ -371,14 +369,10 @@ class _CategorySelectWidgetState extends State<CategorySelectWidget> {
                     });
                   },
                   avatar: Icon(
+                    IconDataCustom().getAccountIconData(category.icon ?? 0),
                     color: category.superId == selectedId
                         ? context.primary
                         : context.onSurfaceVariant,
-                    IconData(
-                      category.icon ?? 0,
-                      fontFamily: fontFamilyName,
-                      fontPackage: fontFamilyPackageName,
-                    ),
                   ),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(28),

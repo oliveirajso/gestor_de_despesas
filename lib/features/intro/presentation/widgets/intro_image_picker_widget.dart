@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:paisa/features/profile/presentation/cubit/profile_cubit.dart';
-import 'package:paisa/main.dart';
-
 import 'package:paisa/core/common.dart';
 import 'package:paisa/core/widgets/paisa_widget.dart';
+import 'package:paisa/features/profile/presentation/cubit/profile_cubit.dart';
+import 'package:paisa/main.dart';
 import 'package:provider/provider.dart';
 
 class IntroImagePickerWidget extends StatelessWidget {
