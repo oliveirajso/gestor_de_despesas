@@ -43,7 +43,7 @@ Future<int> paisaColorPicker(
               },
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 16),
+              padding: const EdgeInsets.only(bottom: 14),
               child: TextButton(
                 style: TextButton.styleFrom(
                   shape: RoundedRectangleBorder(
@@ -51,7 +51,7 @@ Future<int> paisaColorPicker(
                   ),
                   padding: const EdgeInsets.symmetric(
                     horizontal: 24,
-                    vertical: 12,
+                    vertical: 10,
                   ),
                 ),
                 onPressed: () {
